@@ -7,10 +7,10 @@ export const ProjectCard = (project) => `
 <h2>${project.title}</h2>
 <div>
 <a href=${project.github}>
-<img src="/assets/github.png" alt="GitHub Icon" />
+<img src="/github.png" alt="GitHub Icon" />
 </a>
 <a href=${project.netlify}>
-<img src="/assets/netlify.png" alt="Netlify icon" />
+<img src="/netlify.png" alt="Netlify icon" />
 </a>
 </div>
 </div>

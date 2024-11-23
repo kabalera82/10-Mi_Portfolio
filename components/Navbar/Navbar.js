@@ -24,7 +24,7 @@ export const Navbar = () => `
 <ul>
     <li>
         <div class="foto">
-          <img src='/assets/foto.jpg' alt='Foto de perfil'/>
+          <img src='/foto.jpg' alt='Foto de perfil'/>
         </div>
     </li>
     <li>
