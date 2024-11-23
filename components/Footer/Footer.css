@@ -1,0 +1,106 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 15vh;
+  } 
+
+  
+  footer > div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  footer > h2 {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    width: 200px;
+    height: 60px;
+    background: linear-gradient(120deg, transparent, #f9f7f7, transparent);
+    font-weight: 700;
+    border-radius: 10px;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px; /* Alinea el texto verticalmente */
+}
+
+.btn img {
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    vertical-align: center; /* Alinea la imagen verticalmente */
+}
+
+.btn::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #cc00ff, transparent);
+    transform: translateX(-100%);
+    transition: 1s;
+    position: absolute;
+}
+
+.btn:hover {
+    background: white;
+    box-shadow: 0 0 20px 5px #cc00ff;
+}
+
+.btn:hover::before {
+    transform: translateX(100%);
+}
+
+.btn:nth-child(1) {
+    border: 2px solid #cc00ff;
+}
+
+/* 2nd button */
+.btn:nth-child(2) {
+    border: 2px solid #eaff00;
+}
+
+.btn:nth-child(2)::before {
+    background: linear-gradient(120deg, transparent, #eaff00, transparent);
+}
+
+.btn:nth-child(2):hover {
+    box-shadow: 0 0 20px 5px #eaff00;
+}
+
+/* 3rd button */
+.btn:nth-child(3) {
+    border: 2px solid #e3820a;
+}
+
+.btn:nth-child(3)::before {
+    background: linear-gradient(120deg, transparent, #e3820a, transparent);
+}
+
+.btn:nth-child(3):hover {
+    box-shadow: 0 0 20px 5px #e3820a;
+}
+
+/* 4th button */
+.btn:nth-child(4) {
+    border: 2px solid #ff0000;
+}
+
+.btn:nth-child(4)::before {
+    background: linear-gradient(120deg, transparent, #e70606, transparent);
+}
+
+.btn:nth-child(4):hover {
+    box-shadow: 0 0 20px 5px #e30a0a;
+}

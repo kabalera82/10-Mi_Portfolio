@@ -1,0 +1,36 @@
+.home {
+    padding: 0 8rem;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  
+  @media (max-width: 700px) {
+    .home {
+      padding: 0 2rem;
+    }
+  }
+  
+  .home > h1 {
+    font-size: 5.8rem;
+    background: linear-gradient(to right, #ab2eff 0%, #e1ff00 50%, #ff0d00 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Hide the text */
+  }
+
+  .home > p {
+    font-size: 2.5vw;
+    background: linear-gradient(to right, #ab2eff 0%, #e1ff00 50%, #ff0d00 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+  }
+  
+  .home > a {
+    font-size: 1.5rem;
+  }
