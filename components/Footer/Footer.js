@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-export const Footer = () => `
+export const footer = () => `
   <h2>"Contáctame para feedback o cualquier cosa"</h2>
   <div class="footer-buttons">
     ${Button("/assets/gmail.png", "mailto:kabalera@gmail.com", "Gmail")}
