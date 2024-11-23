@@ -1,4 +1,4 @@
-import "/style.css";
+import "./style.css";
 import { changeTheme } from "/components/Navbar/Navbar";
 import { linkPage } from "/utils/linkPage";
 import { Navbar } from "/components/Navbar/Navbar";
