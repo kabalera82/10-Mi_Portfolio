@@ -1,17 +1,14 @@
+
 .projects {
     padding: 0 8rem;
-    min-height: 80vh;
+    height: auto;
     padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 2rem; 
-}
 
-::-webkit-scrollbar {
-    display: none; /* Safari y Chrome */
 }
-
 
   
   @media (max-width: 770px) {
@@ -34,8 +31,11 @@
 
 
 
-  .projects-container::-webkit-scrollbar {
-    display: none; /* Safari y Chrome */
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 8rem;
   }
   
   @media (max-width: 770px) {
