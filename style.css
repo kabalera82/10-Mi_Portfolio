@@ -56,26 +56,22 @@ main {
   object-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
-}
-
-.light main {
-  position: relative; /* Asegura que el pseudo-elemento se posicione correctamente */
+  position: relative; /* Añadir posición relativa */
+  z-index: -1; /* Asegura que el main esté por encima del pseudo-elemento */
 }
 
 .light main::before {
-  content: "";
-  position: absolute;
+  content: ""; /* Asegura que el pseudo-elemento se renderice */
+  position: absolute; /* Cambia a posición absoluta */
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%; /* Cambia a 100% para cubrir todo el main */
   background-image: url('/assets/Designer.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1; /* Envía la imagen de fondo al fondo */
+  z-index: -2; /* Asegura que el pseudo-elemento esté por encima del main */
 }
-
 
 
